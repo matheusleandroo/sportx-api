@@ -19,6 +19,13 @@ class Customer extends Model {
 
     return this;
   }
+
+  static associate(models) {
+    this.hasMany(models.Phone, {
+      foreignKey: 'customer_id',
+      as: 'phones',
+    });
+  }
 }
 
 export default Customer;
