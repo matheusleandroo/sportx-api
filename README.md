@@ -100,3 +100,7 @@ Now you can use your REST API Client to test "**SportX-API**".
 <ul>
   <li><a href="http://matheusleandro.com">Matheus Leandro</a></li>
 </ul>
+
+<h3>License</h3>
+
+This project is licensed under the MIT License - see the <a href="https://github.com/matheusleandroo/reactjs-crud/blob/master/LICENSE">LICENSE.md</a> file for details.
