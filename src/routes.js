@@ -8,5 +8,6 @@ routes.get('/customer', CustomerController.index);
 routes.post('/customer', CustomerController.store);
 routes.put('/customer/:id', CustomerController.update);
 routes.delete('/customer/:id', CustomerController.delete);
+routes.get('/customer/:id', CustomerController.show);
 
 export default routes;

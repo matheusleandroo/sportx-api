@@ -216,11 +216,12 @@ class CustomerController {
                   { number: item.number },
                   { where: { id: item.id } }
                 );
+              } else {
+                await Phone.create({
+                  customer_id: id,
+                  number: item.number,
+                });
               }
-              await Phone.create({
-                customer_id: id,
-                number: item.number,
-              });
             })
           );
 
@@ -264,6 +265,32 @@ class CustomerController {
       return res.status(200).json({ sucess: 'Deleted with sucess.' });
     } catch (error) {
       return res.status(400).json({ erro: 'Delete failed.' });
+    }
+  }
+
+  async show(req, res) {
+    try {
+      const { id } = req.params;
+
+      const customer = await Customer.findAll({
+        include: [
+          {
+            model: Phone,
+            as: 'phones',
+            attributes: ['id', 'number'],
+            required: false,
+          },
+        ],
+        where: [{ id }],
+      });
+
+      if (!customer) {
+        return res.status(400).json({ error: 'customer not found.' });
+      }
+
+      return res.status(200).json(customer);
+    } catch (error) {
+      return res.status(400).json({ erro: 'Search failed.' });
     }
   }
 }
