@@ -10,7 +10,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 <h4>NodeJS</h4>
 
-You need to install NodeJS on your computer before you can use "**#SportX-API**". You can install NodeJS by following <a href="https://nodejs.org/en/download/package-manager/">these instructions</a>.
+You need to install NodeJS on your computer before you can use "**SportX-API**". You can install NodeJS by following <a href="https://nodejs.org/en/download/package-manager/">these instructions</a>.
 
 Once you have completed the installation process, try typing **```npm -v```** into your command line. You should get a response with the version of NodeJS.
 
