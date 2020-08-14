@@ -1,4 +1,4 @@
-# SportX-API
+# SportX API
 
 System for registering customers in a sports store.
 
