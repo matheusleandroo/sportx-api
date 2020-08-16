@@ -73,8 +73,8 @@ Now you can use your REST API Client to test "**SportX API**".
   <li>Docker</li>
   <li>PostgreSQL</li>
   <li>Sequelize</li>
-  <li>Sucrase + Nodemon;</li>
-  <li>ESLint + Prettier + EditorConfig;</li>
+  <li>Sucrase + Nodemon</li>
+  <li>ESLint + Prettier + EditorConfig</li>
 </ul>
 
 ## Authors
